@@ -1,0 +1,6 @@
+{
+  "name": "RationSaathi",
+  "description": "Public Distribution Entitlement and Dispute Assistant for ration card households, calculating entitlements, tracking records, and generating neutral evidence reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

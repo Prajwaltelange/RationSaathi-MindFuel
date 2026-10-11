@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Mukta", "Nirmala UI", "Mangal", "Kohinoor Devanagari", "Noto Sans Devanagari", sans-serif;
+  }
+}
+
+/* Hide scrollbar for tabs navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media print {
+  header, footer, nav, aside, button, .no-print {
+    display: none !important;
+  }
+  body, main {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .modal-backdrop-print {
+    background: transparent !important;
+    position: static !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  .modal-container-print {
+    box-shadow: none !important;
+    border: none !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .print-area {
+    display: block !important;
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+}
